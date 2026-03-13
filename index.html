@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -12,9 +13,27 @@
 
 <h3>Add Student</h3>
 
-<input id="name" placeholder="Name">
-<input id="roll" placeholder="Roll">
-<input id="phone" placeholder="Phone">
+<<h2>Create Your Profile</h2>
+
+<div class="profile-form">
+
+<input id="name" placeholder="Full Name">
+
+<input id="roll" placeholder="Roll Number">
+
+<input id="phone" placeholder="Phone Number">
+
+<input id="bio" placeholder="Short Bio (example: Preparing for JEE)">
+
+<input id="photo" placeholder="Profile Photo URL">
+
+<button onclick="addStudent()">Create Profile</button>
+
+</div>
+
+<h2>Class Profiles</h2>
+
+<div id="students"></div>>
 
 <button onclick="addStudent()">Add Student</button>
 
@@ -32,6 +51,6 @@
 <button onclick="sendMsg()">Send</button>
 
 <script src="script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 </body>
 </html>
